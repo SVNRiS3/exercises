@@ -120,6 +120,10 @@ body {
 	.form-row .instructions {
 		margin-left: 120px;
 	}
+	.form-row .checkbox-label {
+		margin-left: 120px;
+		width: auto;
+	}
 }
 
 .form-row input[type="text"]:invalid,
@@ -141,7 +145,7 @@ body {
 .legacy-form-row .radio-label {
 	display: block;
 	font-size: 14px;
-	padding: 0 20px 0 10px;
+	padding: 0 5px 0 5px;
 }
 
 .legacy-form-row input[type="radio"] {
@@ -175,7 +179,19 @@ body {
 	float: left;
 }
 
+@media only screen and (min-width: 700px) {
+	.legacy-form-row .radio-label {
+		display: block;
+		font-size: 14px;
+		padding: 0 20px 0 10px;
+	}
+}
+
 .form-row select {
 	width: 100%;
 	padding: 5px;
+}
+
+.form-row .checkbox-label {
+	margin-bottom: 0;
 }
